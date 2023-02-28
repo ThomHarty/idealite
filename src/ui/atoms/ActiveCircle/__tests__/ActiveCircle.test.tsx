@@ -1,12 +1,12 @@
-import React from "react";
-import { render } from "@testing-library/react-native";
+import React from 'react';
+import {render} from '@testing-library/react-native';
 
-import { ActiveCircle } from "../ActiveCircle";
+import {ActiveCircle} from '../ActiveCircle';
 
-describe("ActiveCircle Atom", () => {
-    it("renders", () => {
-        const { getByTestId } = render(<ActiveCircle active />);
+describe('ActiveCircle Atom', () => {
+  it('renders', () => {
+    const {getByTestId} = render(<ActiveCircle active />);
 
-        expect(getByTestId("active-circle")).toBeTruthy();
-    });
+    expect(getByTestId('active-circle')).toBeTruthy();
+  });
 });

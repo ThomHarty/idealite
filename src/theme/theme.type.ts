@@ -1,5 +1,5 @@
-export type ThemeType = "light" | "dark";
+export type ThemeType = 'light' | 'dark';
 
 export type ThemeKeys = {
-    [key in ThemeType]: any;
+  [key in ThemeType]: any;
 };

@@ -1,14 +1,14 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IFeedLoadingCardProps {
-    visible: boolean;
-};
+  visible: boolean;
+}
 
 export interface FeedLoadingCardStyles {
-    container?: ViewStyle;
-    cardsContainer?: ViewStyle;
-    card?: ViewStyle;
-    iconContainer?: ViewStyle;
-    handsContainer?: ViewStyle;
-    loadingContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  cardsContainer?: ViewStyle;
+  card?: ViewStyle;
+  iconContainer?: ViewStyle;
+  handsContainer?: ViewStyle;
+  loadingContainer?: ViewStyle;
+}

@@ -1,26 +1,25 @@
-import { interpolateColor, useAnimatedStyle } from "react-native-reanimated";
+import {interpolateColor, useAnimatedStyle} from 'react-native-reanimated';
 
-import { useColorInterpolation } from "../../../../../../shared/hooks";
-import { useColors } from "./useColors";
+import {useColorInterpolation} from '../../../../../../shared/hooks';
+import {useColors} from './useColors';
 
 interface Props {
-    invalid: boolean;
+  invalid: boolean;
 }
 
-export const useInvalidColors = ({
-    invalid,
-}: Props) => {
-    const shared = useColorInterpolation({check: invalid});
-    const { styles, invalidStyles } = useColors();
+export const useInvalidColors = ({invalid}: Props) => {
+  const shared = useColorInterpolation({check: invalid});
+  const {styles, invalidStyles} = useColors();
 
-    const input = useAnimatedStyle(() => {
-        return {
-            borderColor: interpolateColor(shared.value, [0, 1], [
-                styles.input.borderColor,
-                invalidStyles.input.borderColor,
-            ]),
-        }
-    });
+  const input = useAnimatedStyle(() => {
+    return {
+      borderColor: interpolateColor(
+        shared.value,
+        [0, 1],
+        [styles.input.borderColor, invalidStyles.input.borderColor],
+      ),
+    };
+  });
 
-    return { invalidColors: { input } };
+  return {invalidColors: {input}};
 };

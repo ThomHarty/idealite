@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeArrow(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeArrow(props) {
       viewBox="0 0 49 43"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_12487)">
         <Path
           d="M12.916 13.658S5.614 11.616 1.77 19.302s2.416 23.813 17.551 23.34c15.135-.473 25.369-6.085 28.833-16.25 1.448-4.787-.258-11.867-4.333-14.112-9.107-3.893-10.992 2.394-18.751 3.984-4.612.942-7.607-1.824-12.155-2.606z"
@@ -47,8 +46,7 @@ function SwipeArrow(props) {
           y1={15.1021}
           x2={27.7087}
           y2={45.5731}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -61,7 +59,7 @@ function SwipeArrow(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeArrow
+export default SwipeArrow;

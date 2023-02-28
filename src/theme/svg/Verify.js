@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, LinearGradient, Stop } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path, Defs, LinearGradient, Stop} from 'react-native-svg';
 
 function Verify(props) {
   return (
@@ -9,8 +9,7 @@ function Verify(props) {
       viewBox="0 0 118 124"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <Path
         d="M98.059 115.09a38.156 38.156 0 01-3.493 1.694c-10.778 4.783-24.35 6.975-38.023 6.975-2.195 0-4.291-.1-6.287-.2-2.994-.199-5.788-.597-8.483-1.096-1.097-.199-2.095-.398-3.193-.697-21.556-5.082-34.43-19.73-37.923-38.961-2.495-13.552 1.597-37.168 21.257-42.648.898-.3 1.896-.498 2.894-.698 8.583-1.494 19.96.2 34.53 7.075 1.397.698 2.794 1.296 4.091 1.893 6.886 3.09 13.672 5.48 19.96 7.872l3.293 1.196c17.364 6.377 30.438 11.957 31.236 25.41.998 15.046-7.185 25.608-19.86 32.185z"
         fill="url(#paint0_linear_33_4777)"
@@ -50,14 +49,13 @@ function Verify(props) {
           y1={123.802}
           x2={58.9786}
           y2={39.0264}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#C0F7FF" />
           <Stop offset={1} stopColor="#9FF" />
         </LinearGradient>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Verify
+export default Verify;

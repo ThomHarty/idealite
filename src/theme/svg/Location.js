@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function Location(props) {
   return (
@@ -16,8 +16,7 @@ function Location(props) {
       viewBox="0 0 198 214"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_33_5543)">
         <Path
           d="M121.586 99.524c-23.15-27.36-9.826-68.34-55.99-76.256C23.68 21.231 7.984 61.858 2.776 82.69c-8.628 34.505 13.94 84.286 49.027 110.26 49.288 36.485 136.347 20.4 144.051-17.376 7.704-37.776-23.885-51.1-23.885-51.1-18.325-10.005-36.63-8.705-50.383-24.95z"
@@ -47,8 +46,7 @@ function Location(props) {
           y1={23.1943}
           x2={98.9991}
           y2={213.482}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#C0F7FF" />
           <Stop offset={1} stopColor="#9FF" />
         </LinearGradient>
@@ -61,7 +59,7 @@ function Location(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Location
+export default Location;

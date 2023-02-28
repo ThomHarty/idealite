@@ -1,19 +1,22 @@
-import { ThemeKeys, COLORS } from "../../../../theme";
+import {ThemeKeys, COLORS} from '../../../../theme';
 
 const background: ThemeKeys = {
-    light: COLORS.PRIMARY, dark: COLORS.PRIMARY
+  light: COLORS.PRIMARY,
+  dark: COLORS.PRIMARY,
 };
 
 const border: ThemeKeys = {
-    light: COLORS.PRIMARY, dark: COLORS.PRIMARY
+  light: COLORS.PRIMARY,
+  dark: COLORS.PRIMARY,
 };
 
 const text: ThemeKeys = {
-    light: COLORS.WHITE, dark: COLORS.WHITE
+  light: COLORS.WHITE,
+  dark: COLORS.WHITE,
 };
 
 export const primary = {
-    background,
-    border,
-    text,
+  background,
+  border,
+  text,
 };

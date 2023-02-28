@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeSpanner(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeSpanner(props) {
       viewBox="0 0 52 47"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_12846)">
         <Path
           d="M13.228 16.08S5.5 13.925 1.432 22.032C-2.635 30.138 3.99 47.145 20.01 46.647c16.02-.5 26.851-6.417 30.518-17.138 1.532-5.049-.273-12.515-4.586-14.882-9.64-4.107-11.635 2.524-19.848 4.201-4.88.993-8.051-1.924-12.866-2.748z"
@@ -39,8 +38,7 @@ function SwipeSpanner(props) {
           y1={18.1904}
           x2={28.7797}
           y2={50.3324}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipeSpanner(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeSpanner
+export default SwipeSpanner;

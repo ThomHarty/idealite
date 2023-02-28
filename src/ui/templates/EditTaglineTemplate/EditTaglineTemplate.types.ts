@@ -1,17 +1,17 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
-import { IInputProps } from "../../atoms";
+import {IInputProps} from '../../atoms';
 
 export interface IEditTaglineTemplateProps {
-    onPressUpdate: () => void;
-    onPressBack: () => void;
-    onPressCancel: () => void;
-    tagline: IInputProps;
-};
+  onPressUpdate: () => void;
+  onPressBack: () => void;
+  onPressCancel: () => void;
+  tagline: IInputProps;
+}
 
 export interface EditTaglineTemplateStyles {
-    container?: ViewStyle;
-    inputContainer?: ViewStyle;
-    buttonsContainer?: ViewStyle;
-    topButtonContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  inputContainer?: ViewStyle;
+  buttonsContainer?: ViewStyle;
+  topButtonContainer?: ViewStyle;
+}

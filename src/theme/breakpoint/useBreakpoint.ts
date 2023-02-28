@@ -1,10 +1,10 @@
-import { useWindowDimensions } from "react-native";
+import {useWindowDimensions} from 'react-native';
 
 export const useBreakpoint = () => {
-    const { height } = useWindowDimensions();
+  const {height} = useWindowDimensions();
 
-    const breakpoint = 600;
-    const smallScreen = height < breakpoint;
+  const breakpoint = 600;
+  const smallScreen = height < breakpoint;
 
-    return { smallScreen };
+  return {smallScreen};
 };

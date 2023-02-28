@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeElectric(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeElectric(props) {
       viewBox="0 0 49 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_11360)">
         <Path
           d="M12.916 14.434S5.614 12.417 1.77 20.006c-3.843 7.59 2.416 23.514 17.551 23.047 15.135-.468 25.369-6.009 28.833-16.046 1.448-4.727-.258-11.717-4.333-13.934-9.107-3.844-10.992 2.364-18.751 3.934-4.612.93-7.607-1.801-12.155-2.574z"
@@ -39,8 +38,7 @@ function SwipeElectric(props) {
           y1={16.1758}
           x2={27.4613}
           y2={46.2839}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipeElectric(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeElectric
+export default SwipeElectric;

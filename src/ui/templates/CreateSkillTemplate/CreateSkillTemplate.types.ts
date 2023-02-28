@@ -1,17 +1,17 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
-import { IInputProps } from "../../atoms";
+import {IInputProps} from '../../atoms';
 
 export interface ICreateSkillTemplateProps {
-    onPressAdd: () => void;
-    onPressBack: () => void;
-    onPressCancel?: () => void;
-    skill: IInputProps;
-};
+  onPressAdd: () => void;
+  onPressBack: () => void;
+  onPressCancel?: () => void;
+  skill: IInputProps;
+}
 
 export interface CreateSkillTemplateStyles {
-    container?: ViewStyle;
-    inputContainer?: ViewStyle;
-    buttonsContainer?: ViewStyle;
-    topButtonContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  inputContainer?: ViewStyle;
+  buttonsContainer?: ViewStyle;
+  topButtonContainer?: ViewStyle;
+}

@@ -1,12 +1,12 @@
-import { TextStyle, ViewStyle } from "react-native";
+import {TextStyle, ViewStyle} from 'react-native';
 
 export interface IFakeInputProps {
-    label?: string;
-    text: string;
+  label?: string;
+  text: string;
 }
 
 export interface FakeInputStyles {
-    label?: TextStyle;
-    textContainer?: ViewStyle;
-    text?: TextStyle;
+  label?: TextStyle;
+  textContainer?: ViewStyle;
+  text?: TextStyle;
 }

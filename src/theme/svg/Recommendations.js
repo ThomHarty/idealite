@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { G, Path, Defs, ClipPath } from "react-native-svg"
+import * as React from 'react';
+import Svg, {G, Path, Defs, ClipPath} from 'react-native-svg';
 
 function Recommendations(props) {
   return (
@@ -9,8 +9,7 @@ function Recommendations(props) {
       viewBox="0 0 104 71"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_1220_6803)">
         <Path
           d="M29.947 10.923S15.292 4.539 4.565 18.312C-6.16 32.084 1.443 65.686 33.442 69.717c31.998 4.03 56.204-12.768 65.498-25.872 5.613-7.912 7.793-22.5 0-28.217-17.388-12.769-27.456 3.803-44.327 4.367-10.022.335-15.371-6.05-24.666-9.072z"
@@ -35,7 +34,7 @@ function Recommendations(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Recommendations
+export default Recommendations;

@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path} from 'react-native-svg';
 
 function Google(props) {
   return (
@@ -9,8 +9,7 @@ function Google(props) {
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <Path
         d="M19.254 10.213c0-.623-.055-1.214-.15-1.789h-8.903v3.554h5.098c-.229 1.166-.899 2.15-1.891 2.82v2.364h3.04c1.782-1.647 2.806-4.073 2.806-6.95z"
         fill="#4285F4"
@@ -28,7 +27,7 @@ function Google(props) {
         fill="#EA4335"
       />
     </Svg>
-  )
+  );
 }
 
-export default Google
+export default Google;

@@ -1,28 +1,26 @@
-import { useCallback, useEffect } from "react";
-import { useSharedValue, withTiming } from "react-native-reanimated";
+import {useCallback, useEffect} from 'react';
+import {useSharedValue, withTiming} from 'react-native-reanimated';
 
 interface Props {
-    isOpen: boolean;
+  isOpen: boolean;
 }
 
-export const useIconLayout = ({
-    isOpen,
-}: Props) => {
-    const getSharedValue = useCallback(() => {
-        if(isOpen) {
-            return 180;
-        } else {
-            return 0;
-        }
-    }, [isOpen]);
-    
-    const shared = useSharedValue(getSharedValue());
+export const useIconLayout = ({isOpen}: Props) => {
+  const getSharedValue = useCallback(() => {
+    if (isOpen) {
+      return 180;
+    } else {
+      return 0;
+    }
+  }, [isOpen]);
 
-    useEffect(() => {
-        shared.value = withTiming(getSharedValue(), {
-            duration: 250,
-        });
-    }, [isOpen]);
+  const shared = useSharedValue(getSharedValue());
 
-    return shared;
+  useEffect(() => {
+    shared.value = withTiming(getSharedValue(), {
+      duration: 250,
+    });
+  }, [isOpen]);
+
+  return shared;
 };

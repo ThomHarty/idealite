@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeTShirt(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeTShirt(props) {
       viewBox="0 0 56 47"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_728_12936)">
         <Path
           d="M14.202 13.683s-8.366-2.299-12.77 6.353c-4.403 8.652 2.769 26.807 20.11 26.274 17.343-.533 29.07-6.85 33.038-18.292 1.66-5.39-.295-13.359-4.964-15.885-10.435-4.383-12.595 2.694-21.486 4.484-5.284 1.06-8.716-2.053-13.928-2.934z"
@@ -39,8 +38,7 @@ function SwipeTShirt(props) {
           y1={14.9249}
           x2={31.0007}
           y2={49.2575}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipeTShirt(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeTShirt
+export default SwipeTShirt;

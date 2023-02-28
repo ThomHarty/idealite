@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, LinearGradient, Stop } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path, Defs, LinearGradient, Stop} from 'react-native-svg';
 
 function DriversLicense(props) {
   return (
@@ -9,8 +9,7 @@ function DriversLicense(props) {
       viewBox="0 0 111 97"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <Path
         d="M98.9 80.045c-2.7 2.8-5.9 5.4-9.5 7.7-4.5 2.9-9.7 5.3-15.4 6.9-7.6 2.2-16.2 3-25.5 1.8-2.6-.3-5-.8-7.3-1.3-28.2-6.4-36.3-27-39.8-43.1-2.4-10.6-4-31.2 15.3-39.7 6.4-1.9 11.2-1.6 15.2 0 2.4 1 4.5 2.4 6.5 4.1 5.9 5 10.7 12.4 18.4 16.5.7.4 1.4.7 2.1 1 4.1 1.8 7.9 2 11.6 1.6 2.6-.2 5.2-.7 7.8-1.1 2.8-.4 5.7-.8 8.8-.7 0 0 17.3-1.1 22.2 17.6 2.5 8.7-1.6 19.6-10.4 28.7z"
         fill="url(#paint0_linear_934_7454)"
@@ -58,14 +57,13 @@ function DriversLicense(props) {
           y1={96.9522}
           x2={55.0759}
           y2={11.0642}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#C0F7FF" />
           <Stop offset={1} stopColor="#9FF" />
         </LinearGradient>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default DriversLicense
+export default DriversLicense;

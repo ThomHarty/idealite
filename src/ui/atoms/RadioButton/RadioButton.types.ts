@@ -1,13 +1,13 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IRadioButtonProps {
-    checked: boolean;
-    disabled?: boolean;
-    onPress: () => void;
-};
+  checked: boolean;
+  disabled?: boolean;
+  onPress: () => void;
+}
 
 export interface RadioButtonStyles {
-    wrapper?: ViewStyle;
-    container?: ViewStyle;
-    center?: ViewStyle;
+  wrapper?: ViewStyle;
+  container?: ViewStyle;
+  center?: ViewStyle;
 }

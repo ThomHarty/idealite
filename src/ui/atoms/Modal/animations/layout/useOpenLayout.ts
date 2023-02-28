@@ -1,40 +1,38 @@
-import { useCallback, useEffect } from "react";
-import { useSharedValue } from "react-native-reanimated";
+import {useCallback, useEffect} from 'react';
+import {useSharedValue} from 'react-native-reanimated';
 
 interface Props {
-    open: boolean;
+  open: boolean;
 }
 
-export const useOpenLayout = ({
-    open,
-}: Props) => {
-    const getSharedValue = useCallback(() => {
-        if(open) {
-            return {
-                container: {
-                    opacity: 1,
-                },
-                modalContainer: {
-                    top: 0,
-                },
-            };
-        } else {
-            return {
-                container: {
-                    opacity: 0,
-                },
-                modalContainer: {
-                    top: 1000,
-                },
-            };
-        }
-    }, [open]);
-    
-    const shared = useSharedValue(getSharedValue());
+export const useOpenLayout = ({open}: Props) => {
+  const getSharedValue = useCallback(() => {
+    if (open) {
+      return {
+        container: {
+          opacity: 1,
+        },
+        modalContainer: {
+          top: 0,
+        },
+      };
+    } else {
+      return {
+        container: {
+          opacity: 0,
+        },
+        modalContainer: {
+          top: 1000,
+        },
+      };
+    }
+  }, [open]);
 
-    useEffect(() => {
-        shared.value = getSharedValue();
-    }, [open]);
+  const shared = useSharedValue(getSharedValue());
 
-    return shared;
+  useEffect(() => {
+    shared.value = getSharedValue();
+  }, [open]);
+
+  return shared;
 };

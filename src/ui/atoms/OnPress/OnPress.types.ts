@@ -1,6 +1,6 @@
-import { ReactElement } from "react";
+import {ReactElement} from 'react';
 
 export interface IOnPressProps {
-    children: ReactElement | ReactElement[];
-    onPress: () => void;
+  children: ReactElement | ReactElement[];
+  onPress: () => void;
 }

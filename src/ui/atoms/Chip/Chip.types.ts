@@ -1,13 +1,13 @@
-import { TextStyle, ViewStyle } from "react-native";
+import {TextStyle, ViewStyle} from 'react-native';
 
-export type Variant = "primary" | "secondary" | "tertiary";
+export type Variant = 'primary' | 'secondary' | 'tertiary';
 
 export interface IChipProps {
-    variant?: Variant;
-    text: string;
-};
+  variant?: Variant;
+  text: string;
+}
 
 export interface ChipStyles {
-    container?: ViewStyle;
-    text?: TextStyle;
-};
+  container?: ViewStyle;
+  text?: TextStyle;
+}

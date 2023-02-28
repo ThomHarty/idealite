@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeHand(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeHand(props) {
       viewBox="0 0 52 45"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_728_12940)">
         <Path
           d="M13.181 13.702s-7.758-2.156-11.84 5.958c-4.084 8.114 2.566 25.139 18.647 24.639s26.955-6.424 30.635-17.154c1.538-5.054-.274-12.527-4.603-14.897-9.677-4.11-11.68 2.527-19.924 4.206-4.9.994-8.082-1.926-12.915-2.752z"
@@ -39,8 +38,7 @@ function SwipeHand(props) {
           y1={14.7245}
           x2={29.0258}
           y2={46.9023}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipeHand(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeHand
+export default SwipeHand;

@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipePound(props) {
   return (
@@ -16,8 +16,7 @@ function SwipePound(props) {
       viewBox="0 0 47 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_12287)">
         <Path
           d="M12.404 9.805s-7.002-1.921-10.68 5.323c-3.683 7.25 2.316 22.461 16.82 22.015 14.504-.447 24.312-5.74 27.631-15.327 1.388-4.515-.247-11.193-4.152-13.31-8.728-3.672-10.534 2.258-17.97 3.758-4.42.888-7.29-1.721-11.649-2.459z"
@@ -39,8 +38,7 @@ function SwipePound(props) {
           y1={10.8244}
           x2={26.3541}
           y2={39.7522}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipePound(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipePound
+export default SwipePound;

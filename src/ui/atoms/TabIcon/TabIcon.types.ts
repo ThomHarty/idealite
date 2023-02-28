@@ -1,17 +1,17 @@
-import { TextStyle, ViewStyle } from "react-native";
-import { IIconProps } from "../../../shared/components";
+import {TextStyle, ViewStyle} from 'react-native';
+import {IIconProps} from '../../../shared/components';
 
 export interface ITabIconProps {
-    icon: IIconProps["name"];
-    active?: boolean;
-    unread?: boolean;
-    isLikesSent?: boolean;
-};
+  icon: IIconProps['name'];
+  active?: boolean;
+  unread?: boolean;
+  isLikesSent?: boolean;
+}
 
 export interface TabIconStyles {
-    iconContainer?: ViewStyle;
-    icon?: TextStyle;
-    unread?: ViewStyle;
-    smallIconContainer?: TextStyle;
-    smallIcon?: TextStyle;
-};
+  iconContainer?: ViewStyle;
+  icon?: TextStyle;
+  unread?: ViewStyle;
+  smallIconContainer?: TextStyle;
+  smallIcon?: TextStyle;
+}

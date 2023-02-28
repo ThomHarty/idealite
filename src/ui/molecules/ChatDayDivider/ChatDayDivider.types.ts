@@ -1,11 +1,11 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IChatDayDividerProps {
-    text: string;
-};
+  text: string;
+}
 
 export interface ChatDayDividerStyles {
-    container?: ViewStyle;
-    dividerContainer?: ViewStyle;
-    textContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  dividerContainer?: ViewStyle;
+  textContainer?: ViewStyle;
+}

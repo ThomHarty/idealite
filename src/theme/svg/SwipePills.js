@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipePills(props) {
   return (
@@ -16,8 +16,7 @@ function SwipePills(props) {
       viewBox="0 0 59 47"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_728_12924)">
         <Path
           d="M15.468 11.75S6.638 9.31 2 18.49c-4.643 9.181 2.92 28.445 21.208 27.88 18.288-.566 30.654-7.269 34.84-19.41 1.749-5.719-.312-14.175-5.236-16.856-11.004-4.651-13.282 2.859-22.658 4.759-5.572 1.124-9.192-2.18-14.687-3.114z"
@@ -51,8 +50,7 @@ function SwipePills(props) {
           y1={13.5841}
           x2={33.4997}
           y2={50.2101}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -65,7 +63,7 @@ function SwipePills(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipePills
+export default SwipePills;

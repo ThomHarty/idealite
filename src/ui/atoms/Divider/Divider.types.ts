@@ -1,10 +1,10 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IDividerProps {
-    color?: string;
-    testID?: string; 
-};
+  color?: string;
+  testID?: string;
+}
 
 export interface DividerStyles {
-    divider?: ViewStyle;
+  divider?: ViewStyle;
 }

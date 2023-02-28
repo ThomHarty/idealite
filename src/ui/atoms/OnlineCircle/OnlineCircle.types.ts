@@ -1,9 +1,9 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IOnlineCircleProps {
-    online?: boolean;
-};
+  online?: boolean;
+}
 
 export interface OnlineCircleStyles {
-    circle?: ViewStyle;
-};
+  circle?: ViewStyle;
+}

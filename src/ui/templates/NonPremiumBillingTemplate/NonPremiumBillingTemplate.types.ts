@@ -1,11 +1,11 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface INonPremiumBillingTemplateProps {
-    onPressBack: () => void;
-    onPressSignUp: () => void;
-};
+  onPressBack: () => void;
+  onPressSignUp: () => void;
+}
 
 export interface NonPremiumBillingTemplateStyles {
-    container?: ViewStyle;
-    buttonsContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  buttonsContainer?: ViewStyle;
+}

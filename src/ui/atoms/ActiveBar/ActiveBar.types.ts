@@ -1,9 +1,9 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IActiveBarProps {
-    active: boolean;
-};
+  active: boolean;
+}
 
 export interface ActiveBarStyles {
-    bar?: ViewStyle;
-};
+  bar?: ViewStyle;
+}

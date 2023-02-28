@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipePencil(props) {
   return (
@@ -16,8 +16,7 @@ function SwipePencil(props) {
       viewBox="0 0 55 39"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_12123)">
         <Path
           d="M19.443 9.823s-7.247-2.042-11.062 5.64c-3.815 7.683 2.399 23.802 17.422 23.329 15.023-.474 25.18-6.082 28.62-16.242 1.436-4.785-.257-11.86-4.301-14.104-9.04-3.892-10.911 2.392-18.613 3.982-4.578.94-7.551-1.824-12.066-2.605z"
@@ -39,8 +38,7 @@ function SwipePencil(props) {
           y1={11.3745}
           x2={34.2777}
           y2={41.8179}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipePencil(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipePencil
+export default SwipePencil;

@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function Passport(props) {
   return (
@@ -16,8 +16,7 @@ function Passport(props) {
       viewBox="0 0 105 98"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_934_7815)">
         <Path
           d="M99.86 61.997c-6.002 11.31-18.198 24.538-34.682 31.151a60.414 60.414 0 01-15.245 3.93c-5.145.575-10.481.48-16.198-.479-32.3-5.368-39.923-50.225-29.156-68.724 10.862-18.5 25.63-9.969 25.63-9.969 1.62.671 3.05 1.534 4.479 2.397 6.86 4.313 12.1 10.16 20.39 9.776 3.43-.192 6.575-1.15 9.528-2.588 2.096-.958 4.002-2.108 6.003-3.259 2.858-1.629 5.526-3.354 8.29-4.6 2.572-1.15 5.145-1.917 7.908-1.917 1.62 0 3.24.287 4.954.958 2.478.959 5.145 2.684 8.004 5.464 7.908 7.763 5.717 27.317.095 37.86z"
@@ -61,8 +60,7 @@ function Passport(props) {
           y1={97.4763}
           x2={52.4801}
           y2={15.9957}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#C0F7FF" />
           <Stop offset={1} stopColor="#9FF" />
         </LinearGradient>
@@ -71,7 +69,7 @@ function Passport(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Passport
+export default Passport;

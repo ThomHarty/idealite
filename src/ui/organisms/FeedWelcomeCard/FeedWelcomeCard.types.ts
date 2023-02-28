@@ -1,13 +1,11 @@
-import { TextStyle, ViewStyle } from "react-native";
+import {TextStyle, ViewStyle} from 'react-native';
 
-export interface IFeedWelcomeCardProps {
-
-};
+export interface IFeedWelcomeCardProps {}
 
 export interface FeedWelcomeCardStyles {
-    container?: ViewStyle;
-    iconContainer?: ViewStyle;
-    icon?: TextStyle;
-    headingContainer?: TextStyle;
-    infoContainer?: TextStyle;
-};
+  container?: ViewStyle;
+  iconContainer?: ViewStyle;
+  icon?: TextStyle;
+  headingContainer?: TextStyle;
+  infoContainer?: TextStyle;
+}

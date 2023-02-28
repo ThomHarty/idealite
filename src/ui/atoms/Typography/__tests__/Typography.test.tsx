@@ -1,17 +1,17 @@
-import React from "react";
-import { render } from "@testing-library/react-native";
+import React from 'react';
+import {render} from '@testing-library/react-native';
 
-import { Typography } from "../Typography";
-import { ITypographyProps } from "../Typography.types";
+import {Typography} from '../Typography';
+import {ITypographyProps} from '../Typography.types';
 
-describe("Typography Atom", () => {
-    it("renders the text prop", () => {
-        const props: ITypographyProps = {
-            text: "Test Text",
-        };
+describe('Typography Atom', () => {
+  it('renders the text prop', () => {
+    const props: ITypographyProps = {
+      text: 'Test Text',
+    };
 
-        const { getByText } = render(<Typography {...props} />);
+    const {getByText} = render(<Typography {...props} />);
 
-        expect(getByText("Test Text")).toBeTruthy();
-    });
+    expect(getByText('Test Text')).toBeTruthy();
+  });
 });

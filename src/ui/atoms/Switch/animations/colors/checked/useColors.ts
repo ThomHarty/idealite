@@ -1,28 +1,28 @@
-import { useTheme } from "../../../../../../theme";
-import { colors } from "../constants";
+import {useTheme} from '../../../../../../theme';
+import {colors} from '../constants';
 
 export const useColors = () => {
-    const { theme } = useTheme();
+  const {theme} = useTheme();
 
-    const styles = {
-        container: {
-            borderColor: colors.border[theme],
-            backgroundColor: colors.background[theme],
-        },
-        center: {
-            backgroundColor: colors.center[theme],
-        }
-    };
+  const styles = {
+    container: {
+      borderColor: colors.border[theme],
+      backgroundColor: colors.background[theme],
+    },
+    center: {
+      backgroundColor: colors.center[theme],
+    },
+  };
 
-    const checkedStyles = {
-        container: {
-            borderColor: colors.checkedBorder[theme],
-            backgroundColor: colors.checkedBackground[theme],
-        },
-        center: {
-            backgroundColor: colors.checkedCenter[theme],
-        }
-    };
+  const checkedStyles = {
+    container: {
+      borderColor: colors.checkedBorder[theme],
+      backgroundColor: colors.checkedBackground[theme],
+    },
+    center: {
+      backgroundColor: colors.checkedCenter[theme],
+    },
+  };
 
-    return { styles, checkedStyles };
+  return {styles, checkedStyles};
 };

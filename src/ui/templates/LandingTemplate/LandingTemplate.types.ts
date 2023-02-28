@@ -1,19 +1,19 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface ILandingTemplateProps {
-    onPressGoogle: () => void;
-    onPressApple: () => void;
-    onPressFacebook: () => void;
-    onPressCreateAccount: () => void;
-    onPressSignIn: () => void;
-};
+  onPressGoogle: () => void;
+  onPressApple: () => void;
+  onPressFacebook: () => void;
+  onPressCreateAccount: () => void;
+  onPressSignIn: () => void;
+}
 
 export interface LandingTemplateStyles {
-    container?: ViewStyle;
-    topContainer?: ViewStyle;
-    svgContainer?: ViewStyle;
-    iconContainer?: ViewStyle;
-    bottomContainer?: ViewStyle;
-    buttonContainer?: ViewStyle;
-    textContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  topContainer?: ViewStyle;
+  svgContainer?: ViewStyle;
+  iconContainer?: ViewStyle;
+  bottomContainer?: ViewStyle;
+  buttonContainer?: ViewStyle;
+  textContainer?: ViewStyle;
+}

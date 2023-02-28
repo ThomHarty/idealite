@@ -1,17 +1,17 @@
-import { useAnimatedStyle, withTiming } from "react-native-reanimated";
+import {useAnimatedStyle, withTiming} from 'react-native-reanimated';
 
-import { useLayout } from "./useLayout";
+import {useLayout} from './useLayout';
 
 export const useLayoutStyles = (checked: boolean) => {
-    const shared = useLayout(checked);
+  const shared = useLayout(checked);
 
-    const center = useAnimatedStyle(() => {
-        return {
-            right: withTiming(shared.value!.center.right, { 
-                duration: 250,
-            }),
-        }
-    });
+  const center = useAnimatedStyle(() => {
+    return {
+      right: withTiming(shared.value!.center.right, {
+        duration: 250,
+      }),
+    };
+  });
 
-    return { layout: { center } };
+  return {layout: {center}};
 };

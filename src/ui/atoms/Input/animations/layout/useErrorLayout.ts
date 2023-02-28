@@ -1,20 +1,20 @@
-import { useCallback, useEffect } from "react";
-import { useSharedValue } from "react-native-reanimated";
+import {useCallback, useEffect} from 'react';
+import {useSharedValue} from 'react-native-reanimated';
 
 export const useErrorLayout = (error: boolean) => {
-    const getSharedValue = useCallback(() => {
-        if(error) {
-            return { opacity: 1 };
-        } else {
-            return { opacity: 0 };
-        }
-    }, [error]);
-    
-    const errorShared = useSharedValue(getSharedValue());
+  const getSharedValue = useCallback(() => {
+    if (error) {
+      return {opacity: 1};
+    } else {
+      return {opacity: 0};
+    }
+  }, [error]);
 
-    useEffect(() => {
-        errorShared.value = getSharedValue();
-    }, [error]);
+  const errorShared = useSharedValue(getSharedValue());
 
-    return errorShared;
+  useEffect(() => {
+    errorShared.value = getSharedValue();
+  }, [error]);
+
+  return errorShared;
 };

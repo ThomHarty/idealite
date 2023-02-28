@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeLaptop(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeLaptop(props) {
       viewBox="0 0 53 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_12653)">
         <Path
           d="M13.546 9.921S5.864 7.767 1.829 15.868c-4.041 8.106 2.54 25.115 18.455 24.616 15.914-.5 26.675-6.418 30.318-17.139 1.522-5.048-.271-12.515-4.556-14.883-9.576-4.106-11.558 2.525-19.717 4.202-4.85.993-7.999-1.924-12.781-2.749v.006z"
@@ -39,8 +38,7 @@ function SwipeLaptop(props) {
           y1={11.6398}
           x2={29.046}
           y2={43.771}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipeLaptop(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeLaptop
+export default SwipeLaptop;

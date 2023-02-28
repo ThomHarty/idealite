@@ -1,30 +1,33 @@
-import { interpolateColor, useAnimatedStyle } from "react-native-reanimated";
+import {interpolateColor, useAnimatedStyle} from 'react-native-reanimated';
 
-import { useColorInterpolation } from "../../../../../../shared/hooks";
-import { useColors } from "./useColors";
+import {useColorInterpolation} from '../../../../../../shared/hooks';
+import {useColors} from './useColors';
 
 interface Props {
-    checked: boolean;
+  checked: boolean;
 }
 
-export const useCheckedColors = ({
-    checked,
-}: Props) => {
-    const shared = useColorInterpolation({check: checked, duration: 150});
-    const { styles, checkedStyles } = useColors();
+export const useCheckedColors = ({checked}: Props) => {
+  const shared = useColorInterpolation({check: checked, duration: 150});
+  const {styles, checkedStyles} = useColors();
 
-    const container = useAnimatedStyle(() => {
-        return {
-            backgroundColor: interpolateColor(shared.value, [0, 1], [
-                styles.container.backgroundColor,
-                checkedStyles.container.backgroundColor
-            ]),
-            borderColor: interpolateColor(shared.value, [0, 1], [
-                styles.container.borderColor,
-                checkedStyles.container.borderColor,
-            ]),
-        }
-    });
+  const container = useAnimatedStyle(() => {
+    return {
+      backgroundColor: interpolateColor(
+        shared.value,
+        [0, 1],
+        [
+          styles.container.backgroundColor,
+          checkedStyles.container.backgroundColor,
+        ],
+      ),
+      borderColor: interpolateColor(
+        shared.value,
+        [0, 1],
+        [styles.container.borderColor, checkedStyles.container.borderColor],
+      ),
+    };
+  });
 
-    return { checkedColors: { container } };
+  return {checkedColors: {container}};
 };

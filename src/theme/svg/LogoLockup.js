@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, Pattern, Use, Image } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path, Defs, Pattern, Use, Image} from 'react-native-svg';
 
 function LogoLockup(props) {
   return (
@@ -10,8 +10,7 @@ function LogoLockup(props) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
-    >
+      {...props}>
       <Path
         fill="url(#pattern0)"
         d="M38.6595 0.223389H145.3405V99.563789H38.6595z"
@@ -25,8 +24,7 @@ function LogoLockup(props) {
           id="pattern0"
           patternContentUnits="objectBoundingBox"
           width={1}
-          height={1}
-        >
+          height={1}>
           <Use
             xlinkHref="#image0_33_605"
             transform="matrix(.00064 0 0 .00068 0 -.002)"
@@ -40,7 +38,7 @@ function LogoLockup(props) {
         />
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default LogoLockup
+export default LogoLockup;

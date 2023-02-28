@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, Pattern, Use, Image } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path, Defs, Pattern, Use, Image} from 'react-native-svg';
 
 function CarouselOne(props) {
   return (
@@ -10,16 +10,14 @@ function CarouselOne(props) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
-    >
+      {...props}>
       <Path fill="url(#pattern0)" d="M0 0H243.065V260H0z" />
       <Defs>
         <Pattern
           id="pattern0"
           patternContentUnits="objectBoundingBox"
           width={1}
-          height={1}
-        >
+          height={1}>
           <Use
             xlinkHref="#image0_26_382"
             transform="matrix(.00064 0 0 .0006 0 -.002)"
@@ -33,7 +31,7 @@ function CarouselOne(props) {
         />
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default CarouselOne
+export default CarouselOne;

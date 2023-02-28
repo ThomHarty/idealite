@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SignIn(props) {
   return (
@@ -16,8 +16,7 @@ function SignIn(props) {
       viewBox="0 0 237 260"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_33_1189)">
         <Path
           d="M209.664 234.52c-6.136 4.576-13.208 8.424-20.8 11.752-21.528 9.256-48.152 13.624-75.4 13.624-24.752 0-45.656-4.888-62.504-13.624-6.24-3.224-11.96-6.968-17.056-11.232-17.472-14.352-28.392-34.216-32.656-57.408-7.28-39.624 13.208-122.096 117.728-72.904 58.864 27.768 115.128 32.76 117.728 72.904 1.664 24.856-9.048 43.68-27.04 56.888z"
@@ -295,8 +294,7 @@ function SignIn(props) {
           y1={89.5184}
           x2={118.479}
           y2={259.956}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#9FF" />
           <Stop offset={0.631} stopColor="#B5F9FF" />
           <Stop offset={1} stopColor="#C0F7FF" />
@@ -307,8 +305,7 @@ function SignIn(props) {
           y1={42.3825}
           x2={149.187}
           y2={83.461}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#9AFCFF" />
           <Stop offset={0.074} stopColor="#8AFAFF" />
           <Stop offset={0.217} stopColor="#63F5FF" />
@@ -322,8 +319,7 @@ function SignIn(props) {
           y1={79.2493}
           x2={113.342}
           y2={78.7985}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.494} stopColor="#EBEFF2" />
           <Stop offset={1} stopColor="#fff" />
         </LinearGradient>
@@ -333,8 +329,7 @@ function SignIn(props) {
           y1={81.2604}
           x2={119.221}
           y2={80.8096}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.494} stopColor="#EBEFF2" />
           <Stop offset={1} stopColor="#fff" />
         </LinearGradient>
@@ -344,8 +339,7 @@ function SignIn(props) {
           y1={78.5004}
           x2={104.633}
           y2={60.3384}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.494} stopColor="#EBEFF2" />
           <Stop offset={1} stopColor="#fff" />
         </LinearGradient>
@@ -355,8 +349,7 @@ function SignIn(props) {
           y1={130.557}
           x2={76.1006}
           y2={158.205}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#fff" />
           <Stop offset={1} stopColor="#D2E8F1" />
         </LinearGradient>
@@ -365,7 +358,7 @@ function SignIn(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SignIn
+export default SignIn;

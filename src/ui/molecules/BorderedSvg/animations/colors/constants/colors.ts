@@ -1,10 +1,11 @@
-import { ThemeKeys, COLORS } from "../../../../../../theme";
+import {ThemeKeys, COLORS} from '../../../../../../theme';
 
 // default
-const border: ThemeKeys = { 
-    light: COLORS.BORDER, dark: COLORS.BORDER 
+const border: ThemeKeys = {
+  light: COLORS.BORDER,
+  dark: COLORS.BORDER,
 };
 
 export const colors = {
-    border,
+  border,
 };

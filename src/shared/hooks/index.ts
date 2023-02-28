@@ -1,1 +1,1 @@
-export { useColorInterpolation } from "./useColorInterpolation";
+export {useColorInterpolation} from './useColorInterpolation';

@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { G, Path, Defs, ClipPath } from "react-native-svg"
+import * as React from 'react';
+import Svg, {G, Path, Defs, ClipPath} from 'react-native-svg';
 
 function Tap(props) {
   return (
@@ -9,8 +9,7 @@ function Tap(props) {
       viewBox="0 0 56 75"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_192_10194)">
         <Path
           d="M21.404 21.886c6.044 0 10.943-4.9 10.943-10.943C32.347 4.899 27.447 0 21.404 0 15.36 0 10.46 4.9 10.46 10.943c0 6.044 4.9 10.943 10.943 10.943z"
@@ -31,7 +30,7 @@ function Tap(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Tap
+export default Tap;

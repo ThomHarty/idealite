@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, Pattern, Use, Image } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path, Defs, Pattern, Use, Image} from 'react-native-svg';
 
 function Loading(props) {
   return (
@@ -10,8 +10,7 @@ function Loading(props) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
-    >
+      {...props}>
       <Path
         fill="url(#pattern0)"
         d="M0.272949 0H117.72694899999999V116H0.272949z"
@@ -21,8 +20,7 @@ function Loading(props) {
           id="pattern0"
           patternContentUnits="objectBoundingBox"
           width={1}
-          height={1}
-        >
+          height={1}>
           <Use xlinkHref="#image0_198_9534" transform="scale(.0031 .00313)" />
         </Pattern>
         <Image
@@ -33,7 +31,7 @@ function Loading(props) {
         />
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Loading
+export default Loading;

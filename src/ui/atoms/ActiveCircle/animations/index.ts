@@ -1,1 +1,1 @@
-export { useActiveColors } from "./colors/active/useActiveColors";
+export {useActiveColors} from './colors/active/useActiveColors';

@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { G, Path, Defs, ClipPath } from "react-native-svg"
+import * as React from 'react';
+import Svg, {G, Path, Defs, ClipPath} from 'react-native-svg';
 
 function Swiped(props) {
   return (
@@ -9,8 +9,7 @@ function Swiped(props) {
       viewBox="0 0 104 70"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_1220_7169)">
         <Path
           d="M29.948 10.042s-14.655-6.424-25.38 7.44C-6.157 31.344 1.442 65.158 33.443 69.213c32 4.054 56.204-12.851 65.498-26.037 5.613-7.961 7.793-22.645 0-28.398-17.389-12.852-27.454 3.827-44.327 4.395-10.022.336-15.37-6.09-24.666-9.132z"
@@ -43,7 +42,7 @@ function Swiped(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Swiped
+export default Swiped;

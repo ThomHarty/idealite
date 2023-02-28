@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, Pattern, Use, Image } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path, Defs, Pattern, Use, Image} from 'react-native-svg';
 
 function Icon(props) {
   return (
@@ -10,8 +10,7 @@ function Icon(props) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
-    >
+      {...props}>
       <Path
         fill="url(#pattern0)"
         d="M0.659576 0.223389H107.340576V99.563789H0.659576z"
@@ -21,8 +20,7 @@ function Icon(props) {
           id="pattern0"
           patternContentUnits="objectBoundingBox"
           width={1}
-          height={1}
-        >
+          height={1}>
           <Use
             xlinkHref="#image0_988_465"
             transform="matrix(.00064 0 0 .00068 0 -.002)"
@@ -36,7 +34,7 @@ function Icon(props) {
         />
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Icon
+export default Icon;

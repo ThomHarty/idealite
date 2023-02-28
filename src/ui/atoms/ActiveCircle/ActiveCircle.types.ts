@@ -1,9 +1,9 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IActiveCircleProps {
-    active?: boolean;
-};
+  active?: boolean;
+}
 
 export interface ActiveCircleStyles {
-    circle?: ViewStyle;
-};
+  circle?: ViewStyle;
+}

@@ -1,19 +1,22 @@
-import { ThemeKeys, COLORS } from "../../../../theme";
+import {ThemeKeys, COLORS} from '../../../../theme';
 
 const background: ThemeKeys = {
-    light: COLORS.ACCENT_TWO, dark: COLORS.ACCENT_TWO
+  light: COLORS.ACCENT_TWO,
+  dark: COLORS.ACCENT_TWO,
 };
 
 const border: ThemeKeys = {
-    light: COLORS.ACCENT_TWO, dark: COLORS.ACCENT_TWO
+  light: COLORS.ACCENT_TWO,
+  dark: COLORS.ACCENT_TWO,
 };
 
 const text: ThemeKeys = {
-    light: COLORS.PRIMARY, dark: COLORS.PRIMARY
+  light: COLORS.PRIMARY,
+  dark: COLORS.PRIMARY,
 };
 
 export const secondary = {
-    background,
-    border,
-    text,
+  background,
+  border,
+  text,
 };

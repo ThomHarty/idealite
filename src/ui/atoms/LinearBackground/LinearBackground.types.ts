@@ -1,11 +1,11 @@
-import { ReactElement } from "react";
-import { ViewStyle } from "react-native";
+import {ReactElement} from 'react';
+import {ViewStyle} from 'react-native';
 
 export interface ILinearBackgroundProps {
-    children: ReactElement | ReactElement[];
-    borderRadius?: number;
-};
+  children: ReactElement | ReactElement[];
+  borderRadius?: number;
+}
 
 export interface LinearBackgroundStyles {
-    container?: ViewStyle;
-};
+  container?: ViewStyle;
+}

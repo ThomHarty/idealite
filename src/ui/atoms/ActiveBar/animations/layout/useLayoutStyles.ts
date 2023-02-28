@@ -1,23 +1,21 @@
-import { useAnimatedStyle, withTiming } from "react-native-reanimated";
+import {useAnimatedStyle, withTiming} from 'react-native-reanimated';
 
-import { useActiveLayout } from "./useActiveLayout";
+import {useActiveLayout} from './useActiveLayout';
 
 interface Props {
-    active: boolean;
+  active: boolean;
 }
 
-export const useLayoutStyles = ({
-    active,
-}: Props) => {
-    const shared = useActiveLayout({active});
+export const useLayoutStyles = ({active}: Props) => {
+  const shared = useActiveLayout({active});
 
-    const bar = useAnimatedStyle(() => {
-        return {
-            opacity: withTiming(shared.value!.opacity, { 
-                duration: 250,
-            }),
-        }
-    });
+  const bar = useAnimatedStyle(() => {
+    return {
+      opacity: withTiming(shared.value!.opacity, {
+        duration: 250,
+      }),
+    };
+  });
 
-    return { layout: { bar } };
+  return {layout: {bar}};
 };

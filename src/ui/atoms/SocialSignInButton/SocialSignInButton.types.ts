@@ -1,13 +1,13 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
-export type Variant = "Google" | "Apple" | "Facebook";
+export type Variant = 'Google' | 'Apple' | 'Facebook';
 
 export interface ISocialSignInButtonProps {
-    variant: Variant;
-    onPress: () => void;
-};
+  variant: Variant;
+  onPress: () => void;
+}
 
 export interface SocialSignInButtonStyles {
-    container?: ViewStyle;
-    svgContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  svgContainer?: ViewStyle;
+}

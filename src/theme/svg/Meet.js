@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, LinearGradient, Stop } from "react-native-svg"
+import * as React from 'react';
+import Svg, {Path, Defs, LinearGradient, Stop} from 'react-native-svg';
 
 function Meet(props) {
   return (
@@ -9,8 +9,7 @@ function Meet(props) {
       viewBox="0 0 116 126"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <Path
         d="M102.2 113.652c-2.973 2.218-6.4 4.082-10.08 5.695-10.433 4.486-23.335 6.603-36.54 6.603-11.995 0-22.125-2.369-30.29-6.603-3.024-1.562-5.796-3.377-8.266-5.443C8.557 106.949 3.265 97.322 1.2 86.084c-3.528-19.203 6.4-59.17 57.053-35.331 28.526 13.457 55.792 15.876 57.052 35.33.807 12.046-4.385 21.168-13.104 27.569z"
         fill="url(#paint0_linear_192_11299)"
@@ -282,8 +281,7 @@ function Meet(props) {
           y1={43.382}
           x2={58.0105}
           y2={125.979}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#9FF" />
           <Stop offset={0.631} stopColor="#B5F9FF" />
           <Stop offset={1} stopColor="#C0F7FF" />
@@ -294,8 +292,7 @@ function Meet(props) {
           y1={20.5391}
           x2={72.8924}
           y2={40.4464}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#9AFCFF" />
           <Stop offset={0.074} stopColor="#8AFAFF" />
           <Stop offset={0.217} stopColor="#63F5FF" />
@@ -309,8 +306,7 @@ function Meet(props) {
           y1={38.405}
           x2={55.5212}
           y2={38.1865}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.494} stopColor="#EBEFF2" />
           <Stop offset={1} stopColor="#fff" />
         </LinearGradient>
@@ -320,8 +316,7 @@ function Meet(props) {
           y1={39.3796}
           x2={58.3698}
           y2={39.1611}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.494} stopColor="#EBEFF2" />
           <Stop offset={1} stopColor="#fff" />
         </LinearGradient>
@@ -331,8 +326,7 @@ function Meet(props) {
           y1={38.0418}
           x2={51.3005}
           y2={29.2402}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.494} stopColor="#EBEFF2" />
           <Stop offset={1} stopColor="#fff" />
         </LinearGradient>
@@ -342,14 +336,13 @@ function Meet(props) {
           y1={63.2698}
           x2={37.4736}
           y2={76.6687}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#fff" />
           <Stop offset={1} stopColor="#D2E8F1" />
         </LinearGradient>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Meet
+export default Meet;

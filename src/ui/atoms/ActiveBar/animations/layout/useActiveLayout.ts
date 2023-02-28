@@ -1,30 +1,28 @@
-import { useCallback, useEffect } from "react";
-import { useSharedValue } from "react-native-reanimated";
+import {useCallback, useEffect} from 'react';
+import {useSharedValue} from 'react-native-reanimated';
 
 interface Props {
-    active: boolean;
+  active: boolean;
 }
 
-export const useActiveLayout = ({
-    active,
-}: Props) => {
-    const getSharedValue = useCallback(() => {
-        if(active) {
-            return {
-                opacity: 1,
-            };
-        } else {
-            return {
-                opacity: 0,
-            };
-        }
-    }, [active]);
-    
-    const shared = useSharedValue(getSharedValue());
+export const useActiveLayout = ({active}: Props) => {
+  const getSharedValue = useCallback(() => {
+    if (active) {
+      return {
+        opacity: 1,
+      };
+    } else {
+      return {
+        opacity: 0,
+      };
+    }
+  }, [active]);
 
-    useEffect(() => {
-        shared.value = getSharedValue();
-    }, [active]);
+  const shared = useSharedValue(getSharedValue());
 
-    return shared;
+  useEffect(() => {
+    shared.value = getSharedValue();
+  }, [active]);
+
+  return shared;
 };

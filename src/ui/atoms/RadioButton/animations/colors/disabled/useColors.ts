@@ -1,22 +1,22 @@
-import { useTheme } from "../../../../../../theme";
-import { colors } from "../constants";
+import {useTheme} from '../../../../../../theme';
+import {colors} from '../constants';
 
 export const useColors = () => {
-    const { theme } = useTheme();
+  const {theme} = useTheme();
 
-    const styles = {
-        container: {
-            borderColor: colors.border[theme],
-            backgroundColor: colors.background[theme],
-        },
-    };
+  const styles = {
+    container: {
+      borderColor: colors.border[theme],
+      backgroundColor: colors.background[theme],
+    },
+  };
 
-    const disabledStyles = {
-        container: {
-            borderColor: colors.disabledBorder[theme],
-            backgroundColor: colors.disabledBackground[theme],
-        },
-    };
+  const disabledStyles = {
+    container: {
+      borderColor: colors.disabledBorder[theme],
+      backgroundColor: colors.disabledBackground[theme],
+    },
+  };
 
-    return { styles, disabledStyles };
+  return {styles, disabledStyles};
 };

@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeChemist(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeChemist(props) {
       viewBox="0 0 51 45"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_13076)">
         <Path
           d="M13.404 14.668s-7.62-2.112-11.63 5.837c-4.011 7.948 2.52 24.626 18.316 24.137 15.794-.49 26.474-6.293 30.089-16.805 1.51-4.95-.27-12.272-4.521-14.593-9.505-4.027-11.471 2.475-19.57 4.12-4.812.973-7.938-1.887-12.684-2.696z"
@@ -47,8 +46,7 @@ function SwipeChemist(props) {
           y1={16.2803}
           x2={28.9063}
           y2={47.8067}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -61,7 +59,7 @@ function SwipeChemist(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeChemist
+export default SwipeChemist;

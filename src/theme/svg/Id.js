@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function Id(props) {
   return (
@@ -16,8 +16,7 @@ function Id(props) {
       viewBox="0 0 196 197"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_76_6202)">
         <Path
           d="M142.9 188.951c-16.167 6.685-35.462 9.811-56.844 7.032-13.038-1.736-24.077-4.948-33.377-9.203-33.985-15.628-45.023-45.668-50.412-70.065C-1.818 97.961-4.6 61.322 29.82 46.302 69.976 34.32 75.626 72.435 105.09 85.198c17.47 7.554 31.638-.781 50.325 0 0 0 30.682-1.91 39.461 31.43 6.258 23.181-14.776 57.042-51.977 72.323z"
@@ -75,8 +74,7 @@ function Id(props) {
           y1={196.049}
           x2={51.4493}
           y2={193.159}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop stopColor="#9FF" />
           <Stop offset={1} stopColor="#C0F7FF" />
         </LinearGradient>
@@ -85,7 +83,7 @@ function Id(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Id
+export default Id;

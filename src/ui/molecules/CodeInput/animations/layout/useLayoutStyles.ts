@@ -1,23 +1,21 @@
-import { useAnimatedStyle, withTiming } from "react-native-reanimated";
+import {useAnimatedStyle, withTiming} from 'react-native-reanimated';
 
-import { useErrorLayout } from "./useErrorLayout";
+import {useErrorLayout} from './useErrorLayout';
 
 interface Props {
-    hasError: boolean;
+  hasError: boolean;
 }
 
-export const useLayoutStyles = ({
-    hasError,
-}: Props) => {
-    const errorShared = useErrorLayout(hasError);
+export const useLayoutStyles = ({hasError}: Props) => {
+  const errorShared = useErrorLayout(hasError);
 
-    const error = useAnimatedStyle(() => {
-        return {
-            opacity: withTiming(errorShared.value!.opacity, { 
-                duration: 250,
-            }),
-        }
-    });
+  const error = useAnimatedStyle(() => {
+    return {
+      opacity: withTiming(errorShared.value!.opacity, {
+        duration: 250,
+      }),
+    };
+  });
 
-    return { layout: { error } };
+  return {layout: {error}};
 };

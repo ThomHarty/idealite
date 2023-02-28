@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipePhone(props) {
   return (
@@ -16,8 +16,7 @@ function SwipePhone(props) {
       viewBox="0 0 47 42"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_10922)">
         <Path
           d="M12.405 13.766s-6.997-1.93-10.68 5.333c-3.683 7.264 2.316 22.504 16.82 22.057 14.504-.447 24.312-5.75 27.631-15.356 1.387-4.524-.247-11.214-4.152-13.336-8.728-3.68-10.534 2.262-17.97 3.765-4.42.89-7.29-1.724-11.649-2.463z"
@@ -43,8 +42,7 @@ function SwipePhone(props) {
           y1={15.0527}
           x2={26.3513}
           y2={43.8694}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -57,7 +55,7 @@ function SwipePhone(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipePhone
+export default SwipePhone;

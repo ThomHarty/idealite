@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { G, Path, Defs, ClipPath } from "react-native-svg"
+import * as React from 'react';
+import Svg, {G, Path, Defs, ClipPath} from 'react-native-svg';
 
 function Rewind(props) {
   return (
@@ -9,8 +9,7 @@ function Rewind(props) {
       viewBox="0 0 104 70"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_1192_6779)">
         <Path
           d="M29.947 6.623S15.292-.17 4.566 14.484C-6.161 29.138 1.443 64.89 33.442 69.178c31.999 4.29 56.204-13.584 65.498-27.526 5.613-8.419 7.792-23.94 0-30.023-17.389-13.585-27.456 4.046-44.328 4.647-10.02.356-15.37-6.438-24.665-9.653z"
@@ -35,7 +34,7 @@ function Rewind(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default Rewind
+export default Rewind;

@@ -1,11 +1,11 @@
-import { ViewStyle } from "react-native";
+import {ViewStyle} from 'react-native';
 
 export interface IExpiredNDATemplateProps {
-    onPressBack: () => void;
-};
+  onPressBack: () => void;
+}
 
 export interface ExpiredNDATemplateStyles {
-    container?: ViewStyle;
-    bodyContainer?: ViewStyle;
-    buttonsContainer?: ViewStyle;
-};
+  container?: ViewStyle;
+  bodyContainer?: ViewStyle;
+  buttonsContainer?: ViewStyle;
+}

@@ -1,39 +1,43 @@
-import { interpolateColor, useAnimatedStyle } from "react-native-reanimated";
+import {interpolateColor, useAnimatedStyle} from 'react-native-reanimated';
 
-import { useColorInterpolation } from "../../../../../../shared/hooks";
-import { useColors } from "./useColors";
+import {useColorInterpolation} from '../../../../../../shared/hooks';
+import {useColors} from './useColors';
 
 interface Props {
-    disabled: boolean;
+  disabled: boolean;
 }
 
-export const useDisabledColors = ({
-    disabled,
-}: Props) => {
-    const shared = useColorInterpolation({check: disabled, duration: 150});
-    const { styles, disabledStyles } = useColors();
+export const useDisabledColors = ({disabled}: Props) => {
+  const shared = useColorInterpolation({check: disabled, duration: 150});
+  const {styles, disabledStyles} = useColors();
 
-    const container = useAnimatedStyle(() => {
-        return {
-            backgroundColor: interpolateColor(shared.value, [0, 1], [
-                styles.container.backgroundColor,
-                disabledStyles.container.backgroundColor
-            ]),
-            borderColor: interpolateColor(shared.value, [0, 1], [
-                styles.container.borderColor,
-                disabledStyles.container.borderColor,
-            ]),
-        }
-    });
+  const container = useAnimatedStyle(() => {
+    return {
+      backgroundColor: interpolateColor(
+        shared.value,
+        [0, 1],
+        [
+          styles.container.backgroundColor,
+          disabledStyles.container.backgroundColor,
+        ],
+      ),
+      borderColor: interpolateColor(
+        shared.value,
+        [0, 1],
+        [styles.container.borderColor, disabledStyles.container.borderColor],
+      ),
+    };
+  });
 
-    const center = useAnimatedStyle(() => {
-        return {
-            backgroundColor: interpolateColor(shared.value, [0, 1], [
-                styles.center.backgroundColor,
-                disabledStyles.center.backgroundColor
-            ]),
-        }
-    });
+  const center = useAnimatedStyle(() => {
+    return {
+      backgroundColor: interpolateColor(
+        shared.value,
+        [0, 1],
+        [styles.center.backgroundColor, disabledStyles.center.backgroundColor],
+      ),
+    };
+  });
 
-    return { disabledColors: { container, center } };
+  return {disabledColors: {container, center}};
 };

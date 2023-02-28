@@ -1,12 +1,12 @@
-import * as React from "react"
+import * as React from 'react';
 import Svg, {
   G,
   Path,
   Defs,
   LinearGradient,
   Stop,
-  ClipPath
-} from "react-native-svg"
+  ClipPath,
+} from 'react-native-svg';
 
 function SwipeDollar(props) {
   return (
@@ -16,8 +16,7 @@ function SwipeDollar(props) {
       viewBox="0 0 53 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+      {...props}>
       <G clipPath="url(#clip0_729_12970)">
         <Path
           d="M13.936 12.125S6.026 9.944 1.863 18.15 4.481 43.58 20.877 43.074c16.402-.5 27.483-6.498 31.236-17.352 1.568-5.112-.28-12.671-4.694-15.068-9.866-4.158-11.908 2.556-20.314 4.254-4.996 1.005-8.241-1.948-13.169-2.783z"
@@ -39,8 +38,7 @@ function SwipeDollar(props) {
           y1={13.6005}
           x2={29.7411}
           y2={46.1625}
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <Stop offset={0.35} stopColor="#B0F9FF" />
           <Stop offset={1} stopColor="#71FFFF" />
         </LinearGradient>
@@ -53,7 +51,7 @@ function SwipeDollar(props) {
         </ClipPath>
       </Defs>
     </Svg>
-  )
+  );
 }
 
-export default SwipeDollar
+export default SwipeDollar;
