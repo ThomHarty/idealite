@@ -58,6 +58,6 @@
 	<key>CFBundleIconName</key>
 	<string>AppIcon</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
-	<string>NO</string>
+	<false/>
 </dict>
 </plist>
