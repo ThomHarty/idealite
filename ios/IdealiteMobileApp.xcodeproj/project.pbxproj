@@ -506,7 +506,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.idealite.thomharty;
+				PRODUCT_BUNDLE_IDENTIFIER = H4MS8H55TQ.come.idealite.thomharty;
 				PRODUCT_NAME = IdealiteMobileApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -535,7 +535,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.idealite.thomharty;
+				PRODUCT_BUNDLE_IDENTIFIER = H4MS8H55TQ.come.idealite.thomharty;
 				PRODUCT_NAME = IdealiteMobileApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
